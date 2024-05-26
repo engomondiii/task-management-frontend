@@ -9,7 +9,7 @@ const UpdatePassword = () => {
   const handleUpdatePassword = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users/update-password', { token, newPassword });
+      await axios.post('https://task-management-backend-2.onrender.com/api/users/update-password', { token, newPassword });
       alert('Password updated successfully. Please log in with your new password.');
     } catch (error) {
       alert('Error updating password. Please try again.');

@@ -6,7 +6,7 @@ const Dashboard = ({ refreshTrigger }) => {
 
   const fetchStats = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/issues/stats', {
+      const response = await axios.get('https://task-management-backend-2.onrender.com/api/issues/stats', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

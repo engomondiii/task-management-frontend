@@ -7,7 +7,7 @@ const ResetPassword = () => {
   const handleResetPassword = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users/reset-password', { email });
+      await axios.post('https://task-management-backend-2.onrender.com/api/users/reset-password', { email });
       alert('Password reset email sent. Please check your email.');
     } catch (error) {
       alert('Error sending password reset email. Please try again.');

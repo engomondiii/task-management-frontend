@@ -11,7 +11,7 @@ const SignUp = ({ onSignUp }) => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users/register', { username, password, email });
+      await axios.post('https://task-management-backend-2.onrender.com/api/users/register', { username, password, email });
       alert('User registered successfully. Please log in.');
       onSignUp();
       navigate('/login');
